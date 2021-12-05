@@ -1,6 +1,7 @@
 package sortx
 
 import (
+	"fmt"
 	"math/rand"
 	"reflect"
 	"sort"
@@ -12,6 +13,7 @@ type IntSliceDebug struct {
 	Array     []int
 	LessCount int
 	SwapCount int
+	Verbose   bool
 }
 
 func (x *IntSliceDebug) Len() int { return len(x.Array) }
@@ -23,7 +25,9 @@ func (x *IntSliceDebug) Less(i, j int) bool {
 func (x *IntSliceDebug) Swap(i, j int) {
 	x.SwapCount++
 	x.Array[i], x.Array[j] = x.Array[j], x.Array[i]
-	//fmt.Println(i, "<->", j, ": ", x)
+	if x.Verbose {
+		fmt.Println(i, "<->", j, ": ", x.Array)
+	}
 }
 
 func testSortFunc(t *testing.T, m string, f func(Interface)) {
