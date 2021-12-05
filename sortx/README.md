@@ -79,8 +79,8 @@ func BubbleSort(data Interface) {
 func BubbleSort(data Interface) {
 	n := data.Len()
 
-	swap := false
 	for i := n - 1; i > 0; i-- {
+		swap := false
 		for j := 0; j < i; j++ {
 			if data.Less(j+1, j) {
 				data.Swap(j+1, j)
