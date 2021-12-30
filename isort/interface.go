@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 import "sort"
 

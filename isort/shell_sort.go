@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 // ShellSort shell sort implementation
 // Time:  O(n*logn)

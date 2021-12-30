@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 // BubbleSort bubble sort implementation
 // Time:  O(n^2)

@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 // QuickSort quick sort implementation
 // Time:  O(n*logn)

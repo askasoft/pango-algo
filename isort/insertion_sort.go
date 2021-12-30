@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 // InsertionSort insertion sort implementation
 // Time:  O(n^2)

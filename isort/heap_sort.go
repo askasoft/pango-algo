@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 // HeapSort heap sort implementation
 // Time:  O(n*logn)

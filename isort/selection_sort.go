@@ -1,4 +1,4 @@
-package sortx
+package isort
 
 // SelectionSort selection sort implementation
 // Time:  O(n^2)
