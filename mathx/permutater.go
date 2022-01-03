@@ -2,7 +2,7 @@ package mathx
 
 // PermutationCount P(n, m)
 func PermutationCount(n, m int) (count int) {
-	if n < 1 || m < 1 || m > n {
+	if n < 1 || m < 1 || n < m {
 		return
 	}
 

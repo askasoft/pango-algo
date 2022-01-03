@@ -2,7 +2,7 @@ package mathx
 
 // CombinationCount C(n, m)
 func CombinationCount(n, m int) (count int) {
-	if n < 1 || m < 1 || m > n {
+	if n < 1 || m < 1 || n < m {
 		return
 	}
 
@@ -20,7 +20,7 @@ func CombinationCount(n, m int) (count int) {
 
 // Combinate iterate C(n, m) with function iter
 func Combinate(n, m int, iter func([]int) bool) {
-	if n < 1 || m < 1 || m > n {
+	if n < 1 || m < 1 || n < m {
 		return
 	}
 
