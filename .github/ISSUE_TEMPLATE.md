@@ -14,7 +14,7 @@
 package main
 
 import (
-	fswatch "github.com/pandafw/pango-algo"
+	algo "github.com/pandafw/pango-algo"
 )
 
 func main() {
@@ -38,5 +38,4 @@ Hello world
 ## Environment
 
 - go version:
-- gin version (or commit ref):
 - operating system:
