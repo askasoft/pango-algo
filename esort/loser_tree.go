@@ -2,8 +2,9 @@ package esort
 
 // Less less function for loser tree
 // Should return a bool:
-//    true , if a < b
-//    false, if a >= b
+//
+//	true , if a < b
+//	false, if a >= b
 type Less func(a, b int) bool
 
 // LoserTree array based loser tree

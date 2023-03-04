@@ -1,6 +1,9 @@
 package esort
 
-import "io"
+import (
+	"errors"
+	"io"
+)
 
 // KmergeIO K-Merge IO interface
 type KmergeIO interface {
@@ -34,7 +37,7 @@ func NewKmerge(k int, kmio KmergeIO) *Kmerge {
 
 func (km *Kmerge) read(i int) error {
 	err := km.kmio.Read(i)
-	if err == io.EOF {
+	if errors.Is(err, io.EOF) {
 		km.eofs[i] = true
 	} else if err != nil {
 		return err
