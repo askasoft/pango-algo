@@ -1,4 +1,4 @@
-module github.com/pandafw/pango-algo
+module github.com/askasoft/pango-algo
 
 go 1.20
 

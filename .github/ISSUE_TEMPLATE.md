@@ -14,7 +14,7 @@
 package main
 
 import (
-	algo "github.com/pandafw/pango-algo"
+	algo "github.com/askasoft/pango-algo"
 )
 
 func main() {
