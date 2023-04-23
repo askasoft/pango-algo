@@ -6,10 +6,8 @@ package isort
 func SelectionSort(data Interface) {
 	n := data.Len()
 
-	m := 0 // minimum
-
 	for i := 0; i < n; i++ {
-		m = i
+		m := i
 		for j := i + 1; j < n; j++ {
 			if data.Less(j, m) {
 				m = j
